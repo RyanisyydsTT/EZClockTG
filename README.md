@@ -22,6 +22,8 @@ EZClock Bot 是一個用於追蹤出勤和休假的 Telegram 機器人。
     *   使用下列其中一個 API 端點來取得群組的 `chat_id`。將 `YOUR_BOT_TOKEN` 替換為您的機器人權杖：
         *   `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
     *   在回應中找到 `chat` 物件，並記下 `id` 的值。這就是您的群組聊天 ID。
+  
+    *   您也可以從``@RawDataBot``取得，將機器人加入至群組後輸入``/start``，在回覆訊息中找到 ``chat:``底下的``"id": ＸＸＸＸＸＸＸＸ``，該數值極為您的群組聊天ID。
 
 2.  **設定環境：**
     *   建立一個名為 `.env` 的檔案。
@@ -30,13 +32,20 @@ EZClock Bot 是一個用於追蹤出勤和休假的 Telegram 機器人。
         BOT_TOKEN=YOUR_BOT_TOKEN
         GROUP_CHAT_ID=YOUR_GROUP_CHAT_ID
         ```
+3. 設定 Cloudflare Tunnel(或其他內網穿透服務)
+   *   前往 [Cloudflare One(ZeroTrust)](https://one.dash.cloudflare.com/)
+   *   在側邊欄選擇 網路 -> Tunnels
+   *   建立一個新Tunnel
+   *   使用cloudflared，選擇適合您的安裝方式
+   *   應用成功後，在Dash上選擇 "公用主機名稱"， 綁定您的網域 (ex: ``clock[.]ryanisyyds[.]xyz``)
+   *   類型選擇HTTP，IP預設為``127.0.0.1``，請依實際情況設定並加入連接阜(Port)，連接阜通常為``5005`` (ex: ``127.0.0.1:5005``)        
 
 ## 使用方法
 
 ### 新增使用者
 
 1.  開啟 `users.csv` 檔案。
-2.  在一個新行中新增使用者的姓名。
+2.  在一個新行中新增使用者的姓名。 REPO原檔有附上填寫格式
 
 ### 取得使用者聊天 ID
 
