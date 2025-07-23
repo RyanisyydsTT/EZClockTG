@@ -64,8 +64,8 @@ EZClock Bot 是一個用於追蹤出勤和休假的 Telegram 機器人。
 
 只有在 `users.csv` 中 `role` 欄位設定為 `supervisor` 的使用者才能使用以下指令：
 
-*   `/todaystat [username]` - 顯示今天所有或指定使用者的打卡狀態。
-*   `/monthstat [username]` - 顯示本月所有或指定使用者的打卡狀態。
+*   `/todaystat [opt* username]` - 顯示今天所有或指定使用者的打卡狀態。
+*   `/monthstat [opt* username]` - 顯示本月所有或指定使用者的打卡狀態。
 *   `/msg [username] [message]` - 向指定的使用者發送私人訊息。
 
 ## 貢獻
