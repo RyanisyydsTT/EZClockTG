@@ -2,10 +2,10 @@
 # 需要先安裝：python-telegram-bot==20.x, Flask, requests, python-dotenv
 # 建議建立一個 .env 檔案來存放您的機敏資訊
 # .env 檔案內容範例:
-# BOT_TOKEN="7418064668:AAF99T0N3OBvc6m7sxDteESkuc2k6XAjVUA"
-# MAPS_API_KEY="AIzaSyBSUtty0NcVe80M_f2D_rg3Lu83kw9PqbE"
-# WEBHOOK_URL="http://iremote.ryanisyyds.xyz"
-# GROUP_CHAT_ID="-4971098913"
+# BOT_TOKEN="..."
+# MAPS_API_KEY="..."
+# WEBHOOK_URL="..."
+# GROUP_CHAT_ID="..."
 # =============================================================================
 
 import threading
