@@ -23,7 +23,7 @@ EZClock Bot 是一個用於追蹤出勤和休假的 Telegram 機器人。
         *   `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
     *   在回應中找到 `chat` 物件，並記下 `id` 的值。這就是您的群組聊天 ID。
   
-    *   您也可以從``@RawDataBot``取得，將機器人加入至群組後輸入``/start``，在回覆訊息中找到 ``chat:``底下的``"id": ＸＸＸＸＸＸＸＸ``，該數值極為您的群組聊天ID。
+    *   您也可以從``@RawDataBot``取得，將機器人加入至群組後輸入``/start``，在回覆訊息中找到 ``chat:``底下的``"id": ＸＸＸＸＸＸＸＸ``，該數值即為您的群組聊天ID。
 
 2.  **設定環境：**
     *   建立一個名為 `.env` 的檔案。
